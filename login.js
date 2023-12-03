@@ -12,6 +12,7 @@ loginButton.addEventListener("click", (e) => {
         alert("You have successfully logged in.");
         location.reload();
     } else {
+        // Komunikat gdy warunki hasła nie zostaną spełnione
         alert("Wrong password.")
         loginErrorMsg.style.opacity = 1;
     }
