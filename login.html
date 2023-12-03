@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+</head>
+<!--inicjacja formularza logowania-->
+<body>
+  <main id="main-holder">
+    <h1 id="login-header">Login</h1>
+
+    <form id="login-form">
+        <!--parametry pola nazwy użytkownika-->
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+      <!--parametry pola hasła w tym walidacja z użyciem regex. Hasło powinno mieć conajmniej 6 znaków i zawierać małą i wielką literę-->
+      <input type="password" name="password" id="password-field" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" class="login-form-field" placeholder="Password"> 
+        <!--parametry pola przycisku-->
+      <input type="submit" value="Login" id="login-form-submit">
+
+    </form>
+
+  </main>
+</body>
+</html>
